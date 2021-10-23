@@ -151,6 +151,12 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
+        <p>
+          Coded by{" "}
+          <a href="https://github.com/paulacarrilt" alt="mygit">
+            Paula Carril Torrens
+          </a>
+        </p>
       </div>
     </div>
   );
