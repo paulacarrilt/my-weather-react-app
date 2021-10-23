@@ -58,7 +58,7 @@ export default function Weather(props) {
             <div className="col-4">
               <img
                 src="https://tse1.mm.bing.net/th?id=OIP.DPU3emY5zTkp5kavA7rIzwHaHa&pid=Api&P=0&w=300&h=300"
-                alt="sunny image"
+                alt="sunny"
                 width="50"
               />
             </div>
@@ -74,7 +74,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://pic.onlinewebfonts.com/svg/img_498861.png"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
@@ -87,7 +87,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://pic.onlinewebfonts.com/svg/img_498859.png"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
@@ -100,7 +100,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://pic.onlinewebfonts.com/svg/img_498867.png"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
@@ -113,7 +113,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://tse1.mm.bing.net/th?id=OIP.DPU3emY5zTkp5kavA7rIzwHaHa&pid=Api&P=0&w=300&h=300"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
@@ -126,7 +126,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://pic.onlinewebfonts.com/svg/img_498859.png"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
@@ -139,7 +139,7 @@ export default function Weather(props) {
             <div className="col-2">
               <img
                 src="https://pic.onlinewebfonts.com/svg/img_498867.png"
-                alt="sunny image"
+                alt="sunny"
                 width="35"
               />
               <br />
