@@ -26,9 +26,7 @@ export default function Weather(props) {
     <div className="Weather">
       <div className="container">
         <div className="weatherContainer">
-          <h1>
-            <small>Weather</small>
-          </h1>
+          <h1>Weather</h1>
           <form className="row">
             <div className="col-9">
               <input
