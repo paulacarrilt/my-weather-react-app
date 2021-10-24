@@ -37,6 +37,12 @@ input {
   text-align: center;
 }
 
+.sign {
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+}
+
 #search-temp {
   font-size: 32px;
 }
