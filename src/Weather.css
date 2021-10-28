@@ -25,7 +25,8 @@ input {
 .units {
   font-size: 16px;
   position: relative;
-  bottom: 12px;
+  bottom: 22px;
+  margin-left: 6px;
 }
 .sideNotes {
   font-size: 12px;
@@ -44,5 +45,5 @@ input {
 }
 
 #search-temp {
-  font-size: 32px;
+  font-size: 48px;
 }
