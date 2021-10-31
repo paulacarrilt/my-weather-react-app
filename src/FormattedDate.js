@@ -5,9 +5,17 @@ export default function FormattedDate(props) {
   let day = props.date.getDay();
   let hours = props.date.getHours();
   let minutes = props.date.getMinutes();
-  return (
-    <div>
-      {days[day]} {hours}:{minutes}
-    </div>
-  );
+  if (minutes < 10) {
+    return (
+      <div>
+        {days[day]} {hours}:0{minutes}
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {days[day]} {hours}:{minutes}
+      </div>
+    );
+  }
 }
