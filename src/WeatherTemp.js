@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function WeatherTemp(props) {
-  const [unit, setUnit] = useState({ props });
+  const [unit, setUnit] = useState("celsius");
 
   function showFaTemp(event) {
     event.preventDefault();
@@ -19,7 +19,7 @@ export default function WeatherTemp(props) {
   if (unit === "celsius") {
     return (
       <div className="WeatherTemp">
-        <div className="col-4" id="search-temp">
+        <div id="search-temp">
           {props.celsius}
           <span className="units">
             C |{" "}
@@ -33,16 +33,14 @@ export default function WeatherTemp(props) {
   } else {
     return (
       <div className="WeatherTemp">
-        <div className="col-4" id="search-temp">
-          {faTemp()}
-          <span className="units">
-            <a href="/" onClick={showCeTemp}>
-              {" "}
-              C
-            </a>{" "}
-            | F
-          </span>
-        </div>
+        {faTemp()}
+        <span className="units">
+          <a href="/" onClick={showCeTemp}>
+            {" "}
+            C
+          </a>{" "}
+          |F
+        </span>
       </div>
     );
   }
