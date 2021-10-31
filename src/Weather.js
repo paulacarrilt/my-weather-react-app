@@ -3,7 +3,6 @@ import WeatherInfo from "./WeatherInfo.js";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Weather.css";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -11,7 +10,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
 
   function handleResponse(response) {
-    console.log(response.data.dt);
     setWeatherData({
       city: response.data.name,
       temp: Math.round(response.data.main.temp),
