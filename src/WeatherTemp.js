@@ -22,9 +22,9 @@ export default function WeatherTemp(props) {
         <div id="search-temp">
           {props.celsius}
           <span className="units">
-            C |{" "}
+            °C |{" "}
             <a href="/" onClick={showFaTemp}>
-              F
+              °F
             </a>
           </span>
         </div>
