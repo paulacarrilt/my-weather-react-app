@@ -8,7 +8,12 @@ function App() {
       <Weather defaultCity="Berlin" />
       <p className="sign">
         Coded by{" "}
-        <a href="https://github.com/paulacarrilt" alt="mygit">
+        <a
+          href="https://github.com/paulacarrilt"
+          alt="mygit"
+          target="_blank"
+          rel="noreferrer"
+        >
           Paula Carril Torrens
         </a>
       </p>

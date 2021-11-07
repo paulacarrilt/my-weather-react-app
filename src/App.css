@@ -3,13 +3,8 @@
   max-width: 650px;
 }
 
-.App-header {
-  text-align: left;
-  font-size: 32px;
-  color: #282c34;
-  max-width: 500px;
-}
-
-.App-link {
-  color: #61dafb;
+.sign {
+  margin-top: 0;
+  margin-left: 15px;
+  font-size: 9px;
 }
