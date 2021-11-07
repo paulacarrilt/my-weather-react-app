@@ -1,21 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
+import "./WeatherForecast.css";
 
-export default function WeatherForecast() {
-  return (
-    <div className="Weather-Forecast">
-      <div className="row">
-        <div className="col-2">
-          Sat
-          <img
-            src="http://openweathermap.org/img/wn/10n@2x.png"
-            alt="sun"
-            width="50"
-          />
-          <div className="minmax">
-            <strong>19°</strong> | 7°
+export default function WeatherForecast(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
+
+  function handleResponse(response) {
+    console.log(response.data.daily);
+    setForecast(response.data.daily);
+    setLoaded(true);
+  }
+
+  if (loaded) {
+    return (
+      <div className="Weather-Forecast">
+        <div className="row">
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[1]} />
+          </div>
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[2]} />
+          </div>
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[3]} />
+          </div>
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[4]} />
+          </div>
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[5]} />
+          </div>
+          <div className="col-2">
+            <WeatherForecastDay forecastData={forecast[6]} />
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    let apiKey = "255c628f3138fd0c120d0f964422f059";
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(handleResponse);
+
+    return null;
+  }
 }

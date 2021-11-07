@@ -37,9 +37,9 @@ export default function WeatherTemp(props) {
         <span className="units">
           <a href="/" onClick={showCeTemp}>
             {" "}
-            C
+            °C
           </a>{" "}
-          |F
+          |°F
         </span>
       </div>
     );
