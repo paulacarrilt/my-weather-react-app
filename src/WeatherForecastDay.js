@@ -11,13 +11,14 @@ export default function WeatherForecastDay(props) {
     return days[day];
   }
   let icon = `http://openweathermap.org/img/wn/${props.forecastData.weather[0].icon}@2x.png`;
+  let maxTemp = Math.round(props.forecastData.temp.max);
+  let minTemp = Math.round(props.forecastData.temp.min);
   return (
     <div className="WeatherForecastDay">
       {day()}
       <img src={icon} alt="sun" width="50" />
       <div className="minmax">
-        <strong>{Math.round(props.forecastData.temp.max)}°</strong> |{" "}
-        {Math.round(props.forecastData.temp.min)}°
+        <strong>{maxTemp}°</strong> | {minTemp}°
       </div>
     </div>
   );
